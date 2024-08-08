@@ -41,27 +41,24 @@ li {
 }
 
 
-/* Estilos para el efecto hover del enlace de Instagram */
 
 .redes_sociales a.instagram {
     background-image: linear-gradient(45deg, rgba(225, 48, 108, 0.8), rgba(193, 58, 118, 0.8), rgba(131, 58, 180, 0.8), rgba(247, 119, 55, 0.8));
-    background-size: 200%; /* Tamaño del fondo para el gradiente */
-    background-position: right; /* Posicionamiento del fondo */
-    -webkit-background-clip: text; /* Clip del fondo para el texto */
-    -webkit-text-fill-color: transparent; /* Relleno del texto transparente para ver el fondo */
+    background-size: 200%; 
+    background-position: right; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
 }
 .redes_sociales a.instagram:hover {
     background-image: linear-gradient(45deg, rgba(225, 48, 108, 0.8), rgba(193, 58, 118, 0.8), rgba(131, 58, 180, 0.8), rgba(247, 119, 55, 0.8));
-    background-size: 200%; /* Tamaño del fondo para el gradiente */
-    background-position: right; /* Posicionamiento del fondo */
-    -webkit-background-clip: text; /* Clip del fondo para el texto */
-    -webkit-text-fill-color: transparent; /* Relleno del texto transparente para ver el fondo */   
+    background-size: 200%; 
+    background-position: right; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
 }
-/* Estilos para el estado normal del enlace de Instagram */
 .redes_sociales a.instagram {
-    color: #fff; /* Color del texto en estado normal */
+    color: #fff; 
 }
-
 
 .nav {
     background-color: #0d47a1;
@@ -184,7 +181,7 @@ span {
 }
 .section__image-container {
     position: relative;
-    perspective: 1000px; /* Añade profundidad al efecto 3D */
+    perspective: 1000px;
 }
 
 .section__image-container img:nth-of-type(2) {
@@ -215,12 +212,12 @@ span {
     height: 90%; 
     z-index: 1;
     mask-image: linear-gradient(black 80%, transparent);
-    filter: drop-shadow(0 0 10px #ffffff); /* Sombra blanca fuerte */
-    transition: filter 0.3s ease; /* Transición para el efecto hover */
+    filter: drop-shadow(0 0 10px #ffffff); 
+    transition: filter 0.3s ease; 
 }
 
 .section__image-container img:nth-of-type(2):hover {
-    filter: drop-shadow(0 0 20px #00bcd4); /* Sombra azul tipo neón */
+    filter: drop-shadow(0 0 20px #00bcd4);
 }
 
 
@@ -250,7 +247,7 @@ span {
 
 .services {
     padding: 50px;
-    background-color: #bbdefb; /* #2979FF sustituido por azul más claro */
+    background-color: #bbdefb; 
     text-align: center;
 }
 
@@ -328,7 +325,7 @@ span {
     text-align: left;
     width: 100%;
     max-width: 100%;
-    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho total */
+    box-sizing: border-box; 
 }
 
 .contact__form input,
@@ -343,12 +340,12 @@ span {
     transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
     border-radius: 10px;
     padding-left: 1.25rem;
-    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho total */
+    box-sizing: border-box; 
 }
 
 textarea {
-    resize: vertical; /* Permitir que el usuario ajuste la altura */
-    height: 6.25rem; /* Altura fija para consistencia */
+    resize: vertical;
+    height: 6.25rem; 
 }
 
 .contact__form input:focus,

@@ -54,18 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     imageContainer.addEventListener('mousemove', (e) => {
         const rect = imageContainer.getBoundingClientRect();
-        const x = e.clientX - rect.left; // Posición X del mouse dentro del contenedor
-        const y = e.clientY - rect.top;  // Posición Y del mouse dentro del contenedor
+        const x = e.clientX - rect.left; 
+        const y = e.clientY - rect.top;  
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
-        const rotateY = ((x - centerX) / centerX) * 10; // Ajusta la intensidad de la rotación en el eje Y
-        const rotateX = ((centerY - y) / centerY) * 10; // Ajusta la intensidad de la rotación en el eje X
+        const rotateY = ((x - centerX) / centerX) * 10; 
+        const rotateX = ((centerY - y) / centerY) * 10;
 
         image.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
     });
 
     imageContainer.addEventListener('mouseleave', () => {
-        image.style.transform = 'rotateY(0deg) rotateX(0deg)'; // Restablece la posición original cuando el mouse sale del contenedor
+        image.style.transform = 'rotateY(0deg) rotateX(0deg)'; 
     });
 });
 
