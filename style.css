@@ -1,0 +1,466 @@
+body {
+    background-color: #1565c0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0 ;
+    margin-left: 0;
+    color: #333;
+}
+
+.top_bar {
+    background-color: #1565c0;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    direction: rtl;
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    height: 80px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.redes_sociales a {
+    color: #000;
+    font-size: 35px;
+    text-decoration: none;
+    width: 40px;
+    display: inline-block;
+}
+
+.redes_sociales a.whatsapp{
+    color: #fff;
+    background-image: linear-gradient(45deg, #20e769, #128c7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Estilos para el efecto hover del enlace de Instagram */
+
+.redes_sociales a.instagram {
+    background-image: linear-gradient(45deg, rgba(225, 48, 108, 0.8), rgba(193, 58, 118, 0.8), rgba(131, 58, 180, 0.8), rgba(247, 119, 55, 0.8));
+    background-size: 200%; /* Tamaño del fondo para el gradiente */
+    background-position: right; /* Posicionamiento del fondo */
+    -webkit-background-clip: text; /* Clip del fondo para el texto */
+    -webkit-text-fill-color: transparent; /* Relleno del texto transparente para ver el fondo */
+}
+.redes_sociales a.instagram:hover {
+    background-image: linear-gradient(45deg, rgba(225, 48, 108, 0.8), rgba(193, 58, 118, 0.8), rgba(131, 58, 180, 0.8), rgba(247, 119, 55, 0.8));
+    background-size: 200%; /* Tamaño del fondo para el gradiente */
+    background-position: right; /* Posicionamiento del fondo */
+    -webkit-background-clip: text; /* Clip del fondo para el texto */
+    -webkit-text-fill-color: transparent; /* Relleno del texto transparente para ver el fondo */   
+}
+/* Estilos para el estado normal del enlace de Instagram */
+.redes_sociales a.instagram {
+    color: #fff; /* Color del texto en estado normal */
+}
+
+
+.nav {
+    background-color: #0d47a1;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 70px;
+    z-index: 1000;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.nav__list {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav__item {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: background-color 0.3s, padding 0.3s, color 0.3s;
+}
+
+.nav__link:hover {
+    background-color: rgb(47, 80, 113);
+    padding: 10px;
+    border-radius: 10px;
+    color: #f9a825;
+}
+
+.nav__link--button {
+    border: 1px solid #fff;
+    background-color: #34495e;
+    padding: 4px 18px;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+}
+
+.section {
+    margin-top: 0;
+}
+
+.section__image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.section__image {
+    width: 100%;
+    height: 50em;
+    object-fit: cover;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.section__image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section__image-text h1, 
+.section__image-text p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    top: 0px;
+    margin: 0px1;
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 5px 2px 4px #0a2496 !important;
+    text-decoration: underline 2px;
+    text-underline-offset: 20px;
+    top: 0px;
+    margin-top: 0;
+}
+
+#p {
+    font-size: 35px;
+    text-shadow: 10px 2px 10px #083f93 !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+span {
+    color: #e1c109;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.section__image:hover {
+    opacity: 0.9;
+}
+.section__image-container {
+    position: relative;
+    perspective: 1000px; /* Añade profundidad al efecto 3D */
+}
+
+.section__image-container img:nth-of-type(2) {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: auto;
+    height: 60%;
+    z-index: 1;
+    transform: rotateY(0deg) rotateX(0deg);
+    transition: transform 1s ease, box-shadow 1s ease;
+    mask-image: linear-gradient(black 80%, transparent);
+    filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.2));
+}
+
+.section__image-container img:nth-of-type(2):hover {
+    transform: rotateY(0deg) rotateX(0deg) translateZ(20px) scale(1.05);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+/*ajustes imagen*/
+.section__image-container img:nth-of-type(2) {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: auto;
+    height: 90%; 
+    z-index: 1;
+    mask-image: linear-gradient(black 80%, transparent);
+    filter: drop-shadow(0 0 10px #ffffff); /* Sombra blanca fuerte */
+    transition: filter 0.3s ease; /* Transición para el efecto hover */
+}
+
+.section__image-container img:nth-of-type(2):hover {
+    filter: drop-shadow(0 0 20px #00bcd4); /* Sombra azul tipo neón */
+}
+
+
+
+.who-we-are {
+    padding: 50px;
+    background-color: #e1f5fe; 
+    text-align: center;
+}
+
+.who-we-are__title {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #34495e;
+}
+
+.who-we-are__description {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.services {
+    padding: 50px;
+    background-color: #bbdefb; /* #2979FF sustituido por azul más claro */
+    text-align: center;
+}
+
+.services__title {
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+.services__cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services__card {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 30%;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 3px 10px 20px #fbc02d;
+}
+
+.services__card-title {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.services__card-desc {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact {
+    padding: 1.25rem;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+.contact__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2980b9;
+    margin-bottom: 1.875rem;
+}
+
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact__form label {
+    font-size: 1.125rem;
+    color: #333;
+    margin: 0.625rem 0 0.3125rem;
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho total */
+}
+
+.contact__form input,
+.contact__form textarea,
+.contact__form select {
+    width: 100%;
+    padding: 0.9375rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #bdc3c7;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    border-radius: 10px;
+    padding-left: 1.25rem;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho total */
+}
+
+textarea {
+    resize: vertical; /* Permitir que el usuario ajuste la altura */
+    height: 6.25rem; /* Altura fija para consistencia */
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus,
+.contact__form select:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.2);
+    transform: scale(1.02);
+}
+
+.contact__form button {
+    padding: 0.9375rem 1.875rem;
+    background-color: #2980b9;
+    color: white;
+    cursor: pointer;
+    font-size: 1.125rem;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    border: none;
+}
+
+.contact__form button:hover {
+    background-color: #1f5e8c;
+    transform: scale(1.05);
+}
+
+.contact__form button:active {
+    background-color: #1f5e8c;
+    transform: scale(1);
+}
+
+footer{
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    font-family: "roboto    ";
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+
+
+
+
+    .section {
+        margin-top: 120px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+        text-underline-offset: 10px;
+    }
+
+    #p {
+        font-size: 1.25rem;
+    }
+
+    .section__image-text {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        padding: 0 10px;
+    }
+
+    .section__image-container img:nth-of-type(2) {
+        position: absolute;
+        top: 4%;
+        left: 0;
+        width: auto;
+        height: 50%;
+        z-index: 1;
+        transform: rotateY(15deg) rotateX(10deg);
+        transition: transform 0.3s ease;
+        mask-image: linear-gradient(black 80%, transparent);
+    }
+
+    .services__card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .services__card-title {
+        font-size: 1.25rem;
+    }
+
+    .services__card-desc {
+        font-size: 0.875rem;
+    }
+
+    .who-we-are, .services, .contact {
+        padding: 15px;
+    }
+
+    .who-we-are__title, .services__title, .contact__title {
+        font-size: 1.5rem;
+    }
+
+    .who-we-are__description, .contact__form label {
+        font-size: 1rem;
+    }
+
+    .contact__form input, .contact__form textarea {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+}
